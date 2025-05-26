@@ -1,0 +1,69 @@
+.activity-feed {
+  background: #f3f7fb;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+  max-width: 800px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.activity-header h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.activity-header span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.activity-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 4px;
+  height: 80px;
+}
+
+.bar {
+  width: 5px;
+  border-radius: 4px;
+}
+
+.gray {
+  background-color: #dcdde3;
+}
+
+.cyan {
+  background-color: #00cfff;
+}
+
+.blue {
+  background-color: #5c5ce0;
+}
+
+.day-label {
+  font-size: 0.8rem;
+  color: #666;
+}

@@ -1,24 +1,7 @@
-// import Header from "./healthcareDashboard/header";
-// import Sidebar from "./healthcareDashboard/Siderbar";
-// function App() {
-//   return (
-//     <main className="pt-16 px-4">
-//       <Header />
-//       <div className="flex">
-//       <Sidebar />
-//       {/* Your other dashboard components go here */}
-//       <div className="flex-1 p-6 bg-blue-50 min-h-screen">Main Content</div>
-//     </div>
-//       </main>
-      
-//   );
-// }
-
-// export default App;
 import React, { useState } from "react";
 import Header from "./healthcareDashboard/header";
 import Sidebar from "./healthcareDashboard/Siderbar";
-import Dashboard from "./healthcareDashboard/Dashboard";
+import DashboardMainContent from "./healthcareDashboard/Dashboard/DashboardMainContent";
 
 function App() {
   const [activePage, setActivePage] = useState("dashboard");
@@ -26,10 +9,9 @@ function App() {
   const renderPage = () => {
     switch (activePage) {
       case "dashboard":
-        return <Dashboard />;
-      // You can add more cases here for other pages
+        return <DashboardMainContent />;
       default:
-        return <div style={{ marginLeft: "220px", marginTop: "80px" }}>Page not found</div>;
+        return <div>Page not found</div>;
     }
   };
 
@@ -37,12 +19,13 @@ function App() {
     <>
       <Header />
       <Sidebar setActivePage={setActivePage} />
-      {renderPage()}
+
+      {/* ✅ This container offsets the fixed sidebar and header */}
+      <div className="ml-[220px] mt-[80px] p-4 bg-blue-50 min-h-screen">
+        {renderPage()}
+      </div>
     </>
   );
 }
 
 export default App;
-
-
-

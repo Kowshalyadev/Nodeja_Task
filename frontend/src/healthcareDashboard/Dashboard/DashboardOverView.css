@@ -1,0 +1,140 @@
+/* DashboardOverView.css */
+
+/* Wrapper for the dashboard */
+/* .dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+} */
+
+/* Main layout: 3 columns */
+/* .dashboard-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+} */
+
+/* Columns inside the dashboard */
+/* .dashboard-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-width: 250px;
+} */
+
+/* Title styling */
+/* .dashboard-title {
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+} */
+
+/* .activity-wrapper {
+  width: 100%;
+} */
+
+/* Responsive for mobile view */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .dashboard-column {
+    width: 100%;
+  }
+
+  .dashboard-title {
+    text-align: center;
+  }
+}
+
+
+/* .dashboard-container {
+  margin: 0; 
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin: 80px 1rem 70px 1rem; 
+    width: calc(100% - 2rem);
+  }
+} */
+
+
+.dashboard-container {
+  margin-left: 100px;
+  margin-top: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    margin: 80px 1rem 70px 1rem;
+    margin-left: 0 !important;  
+    width: calc(100% - 2rem);
+  }
+}
+/* Dashboard container: takes full height, no margin hacks */
+.dashboard-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Wrapper: full height */
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Layout: horizontal scroll if content is too wide */
+.dashboard-layout {
+  display: flex;
+  flex-direction: row;  /* Left to right */
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: nowrap;   /* Important: prevents wrapping to next line */
+  overflow-x: auto;    /* Allow horizontal scrolling */
+  overflow-y: hidden;  /* No vertical scroll here */
+  padding: 1rem;
+}
+
+/* Columns stay fixed width */
+.dashboard-column {
+  flex: 0 0 auto;      /* Don't stretch columns */
+  min-width: 300px;    /* Set a minimum width */
+  max-width: 400px;    /* Optional: cap width if needed */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-title {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.dashboard-container {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

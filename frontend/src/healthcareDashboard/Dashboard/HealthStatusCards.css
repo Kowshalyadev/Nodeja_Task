@@ -1,0 +1,92 @@
+.status-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.status-card {
+  background: #f9f9ff;
+  border-radius: 1vh;
+  padding: 3vh;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.emoji {
+  font-size: 22px;
+}
+
+.date {
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: -17px;
+  margin-bottom: 4px;
+
+}
+
+.status-bar-wrapper {
+  background: #e5e7eb;
+  border-radius: 6px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.status-bar {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.status-bar.red {
+  background-color: #ef4444;
+  width: 70%;
+}
+
+.status-bar.green {
+  background-color: #10b981;
+  width: 80%;
+}
+
+.status-bar.orange {
+  background-color: #f97316;
+  width: 60%;
+}
+
+.details-link {
+  text-align: right;
+  font-size: 13px;
+  color: #6366f1;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .status-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .status-card {
+    width: 100%;
+  }
+  .status-card {
+  background: #f9f9ff;
+  border-radius: 1vh;
+  padding: 3vh;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+}
