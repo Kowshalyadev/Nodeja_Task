@@ -1,0 +1,30 @@
+/* Prevent overflow on mobile */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Center calendar view on mobile */
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+/* Mobile layout adjustments */
+@media (max-width: 600px) {
+  .appointment-cards-row {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 16px !important;
+  }
+
+  .appointment-cards-row > .appointment-card {
+    min-width: 300px !important;
+    max-width: 350px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

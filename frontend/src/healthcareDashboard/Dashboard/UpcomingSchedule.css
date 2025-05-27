@@ -1,0 +1,28 @@
+.upcoming-container {
+  padding: 16px;
+}
+
+.upcoming-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.upcoming-day-label {
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* Mobile - vertical layout */
+@media (max-width: 600px) {
+  .schedule-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .schedule-row > div {
+    max-width: 100% !important;
+    min-width: auto !important;
+  }
+}
