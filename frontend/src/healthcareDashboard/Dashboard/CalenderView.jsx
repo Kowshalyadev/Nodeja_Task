@@ -5,7 +5,7 @@ function CalendarView() {
     <div
       style={{
         flex: "1",
-        backgroundColor: "#f9fafe",
+        // backgroundColor: "#f9fafe",
         padding: "20px",
         marginLeft: "1px",
         borderRadius: "20px",
@@ -20,6 +20,7 @@ function CalendarView() {
           justifyContent: "space-between",
           alignItems: "center",
           marginBottom: "10px",
+          // backgroundColor: "#f9fafe",
         }}
       >
         <h3 style={{ fontSize: "16px", fontWeight: "600", color: "#333" }}>
@@ -111,32 +112,29 @@ function CalendarView() {
       </div>
 
       {/* Appointment Cards */}
-      <div
-        className="appointment-cards-row"
+      
+
+ <div
+        className="schedule-row"
         style={{
           marginTop: "20px",
           display: "flex",
           gap: "12px",
           justifyContent: "space-between",
-          flexWrap: "wrap",
         }}
       >
         <div
-          className="appointment-card dentist-card"
           style={{
-            backgroundColor: "#4338ca",
+            flex: 1,
+            backgroundColor:  "#4338ca",
             color: "#fff",
             borderRadius: "16px",
             padding: "16px",
-            flex: "1 1 300px",
-            minWidth: "300px",
+            minWidth: "200px",
             maxWidth: "350px",
-            boxSizing: "border-box",
           }}
         >
-          <div
-            style={{ fontWeight: "600", fontSize: "14px", marginBottom: "4px" }}
-          >
+          <div style={{ fontWeight: "600", fontSize: "14px", marginBottom: "4px" }}>
             Dentist 🦷
           </div>
           <div style={{ fontSize: "13px" }}>09:00–11:00</div>
@@ -146,22 +144,18 @@ function CalendarView() {
         </div>
 
         <div
-          className="appointment-card physio-card"
           style={{
+            flex: 1,
             backgroundColor: "#e0e7ff",
             color: "#111827",
             borderRadius: "16px",
             padding: "16px",
-            flex: "1 1 300px",
-            minWidth: "300px",
+            minWidth: "200px",
             maxWidth: "350px",
-            boxSizing: "border-box",
           }}
         >
-          <div
-            style={{ fontWeight: "600", fontSize: "14px", marginBottom: "4px" }}
-          >
-            Physiotherapy Appointment 💪
+          <div style={{ fontWeight: "600", fontSize: "14px", marginBottom: "4px" }}>
+              Physiotherapy Appointment 💪
           </div>
           <div style={{ fontSize: "13px" }}>11:00–12:00</div>
           <div style={{ fontSize: "12px", marginTop: "4px" }}>
@@ -169,6 +163,8 @@ function CalendarView() {
           </div>
         </div>
       </div>
+
+
     </div>
   );
 }
