@@ -1,18 +1,18 @@
 .anatomy-container {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 200px;
+  width: 100%; 
 }
 
 .anatomy-image {
   width: 100%;
-  height: auto;
+  height: 300px; /* or whatever specific height you want */
   object-fit: contain;
 }
+
 
 /* Responsive scaling for smaller devices */
 @media (max-width: 768px) {

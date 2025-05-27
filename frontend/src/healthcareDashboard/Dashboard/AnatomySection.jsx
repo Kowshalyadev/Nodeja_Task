@@ -1,5 +1,5 @@
 import React from "react";
-import bodyImg from "../assets/anatomy.png";
+import bodyImg from "../assets/anatomyy.png"
 import "./AnatomySection.css"
 const AnatomySection = () => {
   return (
