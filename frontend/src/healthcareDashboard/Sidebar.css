@@ -1,6 +1,6 @@
 .sidebar {
   width: 220px;
-  background-color: #f5f9ff;
+  background-color: #F6F9FC; /* updated from #f5f9ff */
   padding: 1rem;
   padding-top: 80px;
   height: 100vh;
@@ -13,6 +13,23 @@
   font-family: "Segoe UI", sans-serif;
   transition: all 0.3s ease;
 }
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  color: #3B3B98; /* updated icon/text color */
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.sidebar-menu li:hover {
+  background-color: #E6F0FF; /* updated hover */
+}
+
 
 .sidebar-heading {
   font-size: 0.85rem;
@@ -27,7 +44,7 @@
   margin: 0;
 }
 
-.sidebar-menu li {
+/* .sidebar-menu li {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -41,7 +58,7 @@
 
 .sidebar-menu li:hover {
   background-color: #e6f0ff;
-}
+} */
 
 .sidebar-menu.bottom {
   margin-top: auto;

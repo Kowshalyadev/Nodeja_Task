@@ -1,37 +1,40 @@
-/* Global box sizing */
 * {
   box-sizing: border-box;
 }
 
-/* Fixed top header */
+body {
+  background-color: #F6F9FC;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
 .header-container {
   width: 100%;
-  background-color: #f5f9ff;
-  padding: 1rem 2rem;
+  background-color: #F6F9FC;
+  /* padding: 1rem 2rem; */
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
 }
 
-/* Navbar layout */
+/* Navbar Layout */
 .navbar {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1400px;
+  height: 70px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 1rem;
+  align-items: center;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
-/* Logo styling */
+/* Logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -40,58 +43,69 @@
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
+.logo span {
+  color: #3b3b98;
+}
 
-/* Search bar */
+/* Search section */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 2rem;
+}
+
 .search-bar {
   flex: 1;
-  margin: 0 1.5rem;
   position: relative;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #999;
+  font-size: 1rem;
 }
 
 .search-bar input {
   width: 100%;
-  max-width: 500px;
-  padding: 0.6rem 3rem 0.6rem 2.5rem;
-  border-radius: 15px;
   border: none;
-  background-color: white;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border-radius: 15px;
   font-size: 1rem;
-  color: #888;
+  color: #555;
+  outline: none;
+  background-color: transparent;
 }
 
-.search-bar::before {
-  content: "🔍";
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  font-size: 1rem;
-}
-
-/* Icon group */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-/* Notification icon */
+/* Bell icon */
 .icon {
-  background-color: white;
+  background-color: #ffffff;
   padding: 0.6rem;
   border-radius: 12px;
   font-size: 1.2rem;
   color: #3b3b98;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Profile avatar */
+/* Profile & Add Button */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .profile {
   background-color: #00e0ff;
   border-radius: 12px;
@@ -99,14 +113,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-}
-
-.profile span {
   font-size: 1.2rem;
 }
 
-/* Add button */
 .add-button {
   background-color: #3b3b98;
   color: white;
@@ -115,12 +124,11 @@
   border-radius: 12px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  flex-shrink: 0;
 }
 
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .search-bar {
+  .search-bar-container {
     display: none;
   }
 

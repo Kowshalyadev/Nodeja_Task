@@ -1,18 +1,27 @@
 import React from "react";
 import "./Header.css";
+import { FiSearch, FiBell } from "react-icons/fi";
 
 function Header() {
   return (
     <header className="header-container">
       <nav className="navbar">
-        <div className="logo">Healthcare.</div>
+        {/* Logo */}
+        <div className="logo">Health<span>care.</span></div>
 
-        <div className="search-bar">
-          <input type="text" placeholder="Search..." disabled />
+        {/* Search and Bell */}
+        <div className="search-bar-container">
+          <div className="search-bar">
+            <FiSearch className="search-icon" />
+            <input type="text" placeholder="Search" disabled />
+          </div>
+          <div className="icon">
+            <FiBell />
+          </div>
         </div>
 
+        {/* Profile and Add */}
         <div className="nav-icons">
-          <span className="icon">🔔</span>
           <div className="profile">
             <span role="img" aria-label="avatar">🧑‍⚕️</span>
           </div>
