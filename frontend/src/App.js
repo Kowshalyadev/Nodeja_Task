@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./healthcareDashboard/header";
+import Header from "./healthcareDashboard/Header";
 import Sidebar from "./healthcareDashboard/Siderbar";
 import DashboardMainContent from "./healthcareDashboard/Dashboard/DashboardMainContent";
 
