@@ -34,13 +34,13 @@
   box-sizing: border-box;
   
   width: 100%;
-  max-width: 500px; /* NEW: Limit width for larger screens */
-  min-width: 280px;  /* NEW: Ensure minimum width for small screens */
+  max-width: 500px; 
+  min-width: 280px;  
   overflow: hidden;
 }
 
 
-/* Title */
+
 .dashboard-title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -48,14 +48,14 @@
   margin-bottom: 1rem;
 }
 
-/* Top Left Section (Anatomy + Cards) */
+
 .top-left {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
   .dashboard-wrapper {
     padding-left: 1rem;
@@ -85,12 +85,3 @@
     gap: 1rem;
   }
 }
-/* @media (max-width: 600px) {
-  .dashboard-wrapper {
-    padding: 80px 0.5rem 1rem 0.5rem;
-  }
-
-  .top-left {
-    gap: 1rem;
-  }
-} */

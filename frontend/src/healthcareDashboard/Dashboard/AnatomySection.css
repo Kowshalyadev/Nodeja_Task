@@ -9,12 +9,12 @@
 
 .anatomy-image {
   width: 100%;
-  height: 300px; /* or whatever specific height you want */
+  height: 300px; 
   object-fit: contain;
 }
 
 
-/* Responsive scaling for smaller devices */
+
 @media (max-width: 768px) {
   .anatomy-container {
     max-width: 100%;

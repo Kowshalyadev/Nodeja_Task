@@ -1,14 +1,14 @@
-/* MOBILE FIXED LAYOUT */
+
 @media (max-width: 600px) {
   .appointment-cards-row {
     flex-direction: column !important;
-    align-items: center; /* center horizontally */
+    align-items: center;
     gap: 16px !important;
   }
   .appointment-cards-row > .appointment-card {
-    min-width: 300px !important;  /* fixed min width */
-    max-width: 350px !important;  /* fixed max width */
-    width: 100%;                  /* fill container width */
+    min-width: 300px !important; 
+    max-width: 350px !important;  
+    width: 100%;                 
     box-sizing: border-box;
   }
 }

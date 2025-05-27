@@ -5,7 +5,7 @@ function CalendarView() {
     <div
       style={{
         flex: "1",
-        // backgroundColor: "#f9fafe",
+     
         padding: "20px",
         marginLeft: "1px",
         borderRadius: "20px",

@@ -14,7 +14,7 @@
   margin-bottom: 8px;
 }
 
-/* Mobile - vertical layout */
+
 @media (max-width: 600px) {
   .schedule-row {
     flex-direction: column !important;
